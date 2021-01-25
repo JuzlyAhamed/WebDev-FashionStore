@@ -1,0 +1,102 @@
+<html>
+    <head> <title>Managers UI</title></head>
+    <style>
+
+        body {font-family:'Times New Roman', Times, serif;}
+        form {border: 5px solid #02246d;width: 45%;
+             float: left;
+        }
+
+         h1,h3{ font-family: "Helvetica Neue";
+             color :rgb(5, 48, 48);
+           
+                 }
+        input[type=text], input[type=password] {
+            width: 60%;
+            padding: 12px 18px;
+            margin: 8px 15px;
+            display: inline-table;
+            border: 3px solid rgb(5, 99, 153);
+            box-sizing: border-box;
+            
+          }
+          
+          button {
+              font-family: Impact, 'Arial Narrow Bold';
+          background-color: #065675;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 10px;
+          border: none;
+          cursor: pointer;
+          width:25%;
+        }
+        
+        
+        a {
+                 color: rgb(12, 26, 25);
+              }
+              b{
+margin-left:25px;
+}
+ table{ 
+    border: 6px solid #02246d;
+      float: right;
+      width: 50%;
+      height: 85%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: left: ;
+ }
+        
+    
+        </style>
+        
+
+    <body bgcolor="lightblue"> 
+        
+        <form action = "signup.php" method ="POST" >
+            
+            <br>
+            <b> Product ID </b> <br>
+            <input type = "text"><br> <br>
+            <b> Product Name  </b>  <br>
+            <input type = "text"><br> <br>
+            <b> Price   </b> <br>
+            <input type ="text"><br> <br>
+            <b> Sales person </b>  <br> 
+            <select name = "dropdown" option style="background-color: rgb(64, 197, 250);text-align: center; font-size: large; margin : 25px;"> 
+                 <option value = "x" selected>Ali express</option>
+                <option value = "y">eBay</option>
+                <option value = "ct" required>Daraz</option>
+                <option value = "z" disabled>mc</option>
+                <option value = "chichen">kfc/option>
+                <option value = "z">mcdonalds</option>
+                
+                </select>
+                <br>
+            <b> Status: </b> <br> 
+            
+            <input type="radio" id="Accept" name="status" value="Accept" radio style="margin: 20px;">
+            <label for="status">Accept</label>
+            <input type="radio" id="Accept" name="status" value="Reject" radio style="margin: 20px;>
+            <label for="status">Reject</label><br>
+            
+            <button type ="submit" value = "submit"> ADD </button>
+            <button type ="submit" value = "submit"> Update </button>
+            <button type ="submit" value = "submit"> Delete </button>
+            </form>
+          
+        
+
+            <table border ="8px" > 
+                
+            <tr><td>Product ID</td><td>   </td></tr>
+            <tr><td>Product Name</td><td></td></tr>
+            <tr><td>Price</td><td></td></tr>
+            <tr><td>Sales person</td><td></td></tr>
+            <tr><td>Status</td><td></td></tr>
+
+            </table>
+        
+    </body>
+</html>
